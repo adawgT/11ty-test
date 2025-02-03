@@ -5,18 +5,27 @@ title: 11ty Boilerplate
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/screen.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles/screen.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
-    {{ content }}
+    <nav>
+        <ul>
+            <li><a href="/" title="Go home">Home</a></li>
+            <li><a href="/about/" title="About this site">About</a></li>
+            <li><a href="/blog/entry1/" title="First Log Entry">First Log</a></li>
+            <li><a href="/blog/entry2/" title="Second Log Entry">Second Log</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interstellar Explorer's Log</p>
+    </footer>
 </body>
 </html>
